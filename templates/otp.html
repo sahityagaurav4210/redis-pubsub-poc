@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Your Verification Code</title>
+    <style>
+      /* Global resets for consistent rendering across email clients */
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      }
+      table {
+        border-collapse: collapse !important;
+      }
+      body {
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        background-color: #f4f6f8;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+      }
+
+      /* Mobile optimization */
+      @media screen and (max-width: 600px) {
+        .email-container {
+          width: 100% !important;
+          padding: 10px !important;
+        }
+        .otp-code {
+          font-size: 32px !important;
+          letter-spacing: 4px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background Wrapper -->
+    <table
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+      style="background-color: #f4f6f8; padding: 40px 0"
+    >
+      <tr>
+        <td align="center">
+          <!-- Email Container Card -->
+          <table
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="540"
+            class="email-container"
+            style="
+              background-color: #ffffff;
+              border-radius: 8px;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+              overflow: hidden;
+            "
+          >
+            <!-- Header / Brand Logo Space -->
+            <tr>
+              <td style="padding: 32px 40px 20px 40px">
+                <!-- Replace URL with your actual hosted logo -->
+                <img
+                  src="https://pbcms.codingworks.in/logo.jpeg"
+                  alt="Company Logo"
+                  width="48"
+                  height="48"
+                  style="
+                    display: block;
+                    font-family: sans-serif;
+                    color: #1a1a1a;
+                    font-weight: bold;
+                    font-size: 20px;
+                    border-radius: 6px;
+                  "
+                />
+              </td>
+            </tr>
+
+            <!-- Main Content Body -->
+            <tr>
+              <td style="padding: 40px 40px 32px 40px">
+                <h1
+                  style="
+                    margin: 0 0 16px 0;
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: #1a1a1a;
+                    line-height: 30px;
+                  "
+                >
+                  Verify your identity
+                </h1>
+                <p
+                  style="
+                    margin: 0 0 24px 0;
+                    font-size: 15px;
+                    line-height: 24px;
+                    color: #555555;
+                  "
+                >
+                  Hello {{name}}, <br /><br />
+                  We received a request to access your account. Please use the
+                  following One-Time Password (OTP) to complete your
+                  verification. This code is valid for <b>{{time}} minutes</b>.
+                </p>
+
+                <!-- OTP Code Display Box -->
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  style="margin-bottom: 24px"
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        background-color: #f8fafc;
+                        border: 1px dashed #cbd5e1;
+                        border-radius: 6px;
+                        padding: 18px 0;
+                      "
+                    >
+                      <span
+                        class="otp-code"
+                        style="
+                          font-family:
+                            &quot;Courier New&quot;, Courier, monospace;
+                          font-size: 38px;
+                          font-weight: 800;
+                          letter-spacing: 6px;
+                          color: #2563eb;
+                        "
+                      >
+                        {{otp}}
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+
+                <p
+                  style="
+                    margin: 0 0 32px 0;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #777777;
+                    font-style: italic;
+                  "
+                >
+                  If you did not make this request, you can safely ignore this
+                  email. Someone else might have typed your email address by
+                  mistake.
+                </p>
+
+                <hr
+                  style="
+                    border: 0;
+                    border-top: 1px solid #f0f0f0;
+                    margin: 0 0 20px 0;
+                  "
+                />
+
+                <p
+                  style="
+                    margin: 0;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #999999;
+                  "
+                >
+                  Securely sent by Coding Works.<br />
+                  To protect your account, never share this code with anyone.
+                </p>
+              </td>
+            </tr>
+
+            <!-- Footer Area -->
+            <tr>
+              <td
+                align="center"
+                style="
+                  background-color: #fafafa;
+                  padding: 24px 40px;
+                  text-align: center;
+                "
+              >
+                <p style="margin: 0 0 8px 0; font-size: 12px; color: #aaaaaa">
+                  © 2026 Coding Works. All rights reserved.
+                </p>
+                <p style="margin: 0; font-size: 12px; color: #aaaaaa">
+                  <a
+                    href="https://example.com/privacy"
+                    style="color: #2563eb; text-decoration: none; margin: 0 5px"
+                    >Privacy Policy</a
+                  >
+                  •
+                  <a
+                    href="https://example.com/support"
+                    style="color: #2563eb; text-decoration: none; margin: 0 5px"
+                    >Support</a
+                  >
+                </p>
+              </td>
+            </tr>
+          </table>
+          <!-- /Email Container Card -->
+        </td>
+      </tr>
+    </table>
+    <!-- /Background Wrapper -->
+  </body>
+</html>

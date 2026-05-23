@@ -1,0 +1,36 @@
+{
+  "name": "redis-pubsub-poc",
+  "version": "0.0.1",
+  "description": "A poc repository to test publisher and subscriber model using redis.",
+  "keywords": [
+    "poc",
+    "node",
+    "typescript",
+    "redis",
+    "pub-sub"
+  ],
+  "license": "ISC",
+  "author": "Gaurav Sahitya",
+  "type": "module",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node build/index.js"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.6",
+    "@types/ioredis": "^4.28.10",
+    "@types/node": "^25.9.1",
+    "@types/nodemailer": "^8.0.0",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "ioredis": "^5.10.1",
+    "nodemailer": "^8.0.7"
+  }
+}
